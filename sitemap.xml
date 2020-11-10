@@ -8,6 +8,14 @@
 	<priority>0.8</priority>
 </url>
 <url>
+	<loc>https://www.jssaints.com/terms</loc>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://www.jssaints.com/privacy</loc>
+	<priority>0.8</priority>
+</url>
+<url>
 	<loc>https://www.jssaints.com/bootamp/</loc>
 	<priority>0.8</priority>
 </url>
@@ -77,6 +85,10 @@
 </url>
 <url>
 	<loc>https://www.jssaints.com/projects/mantisbt-gitlab-theme</loc>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://www.jssaints.com/projects/restyaboard-gmail-addon</loc>
 	<priority>0.8</priority>
 </url>
 </urlset>
