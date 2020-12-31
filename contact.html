@@ -49,6 +49,43 @@
 </head>
 
 <body>
+    <!-- Start of Google Analytics code  -->
+  <amp-analytics type="googleanalytics" id="googleanalytics" data-credentials="include">
+    <script type="application/json">
+    {
+      "vars": {
+        "account": "UA-157459010-1"
+      },
+      "triggers": {
+        "trackPageview": {
+          "on": "visible",
+          "request": "pageview"
+        },
+        "tweetClick": {
+          "on": "click",
+          "selector": "a[href*=\"twitter.com/share\"], a[href*=\"twitter.com/intent\"]",
+          "request": "social",
+          "vars": {
+            "socialNetwork": "twitter",
+            "socialAction": "tweet",
+            "socialTarget": "${ampdocUrl}"
+          }
+        },
+        "fbShareClick": {
+          "on": "click",
+          "selector": "a[href*=\"facebook.com/sharer\"]",
+          "request": "social",
+          "vars": {
+            "socialNetwork": "facebook",
+            "socialAction": "share",
+            "socialTarget": "${ampdocUrl}"
+          }
+        }
+      }
+    }
+    </script>
+  </amp-analytics>
+  <!-- End of Google Analytics code  -->
     <header class="ampstart-headerbar flex justify-start items-center top-0 left-0 right-0 pl2 pt1 max-width-3 mx-auto absolute">
     <div role="button" on="tap:header-sidebar.toggle" tabindex="0" class="ampstart-navbar-trigger md-hide lg-hide pr2">☰
     </div>
